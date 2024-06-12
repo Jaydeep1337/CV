@@ -5,129 +5,187 @@
     <title>Jaydeep Gaikwad's Website</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      table {
+      .container {
+        max-width: 900px;
         width: 100%;
-        border-collapse: collapse;
+        margin: 20px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
       }
-      th, td {
-        padding: 10px;
-        border: 1px solid #ddd;
+      .profile-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
-      img {
+      .profile-header img {
         border-radius: 50%;
+        border: 5px solid #007BFF;
         width: 150px;
         height: 150px;
+        margin-right: 20px;
       }
-      hr {
-        margin: 20px 0;
+      .profile-header h1 {
+        margin: 0;
+      }
+      .profile-header p {
+        margin: 5px 0;
+        color: #777;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h3 {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #007BFF;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .section table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      .section table, .section th, .section td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      .section th {
+        background-color: #f7f7f7;
+        text-align: left;
+      }
+      .skills ul {
+        list-style: none;
+        padding: 0;
+      }
+      .skills ul li {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      .certifications ul {
+        list-style: none;
+        padding: 0;
+      }
+      .certifications ul li {
+        margin: 10px 0;
+      }
+      .certifications ul li a {
+        color: #007BFF;
+        text-decoration: none;
+      }
+      .certifications ul li a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #007BFF;
+        color: white;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
       }
     </style>
   </head>
   <body>
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img src="Photo 2X2.jpg" alt="Profile Picture">
-        </td>
-        <td>
+    <div class="container">
+      <div class="profile-header">
+        <img src="Levi.jpg" alt="Profile Picture">
+        <div>
           <h1>Jaydeep Gaikwad</h1>
           <p><strong>DevOps Engineer</strong></p>
-          <p><a href="https://www.linkedin.com/in/jaydeepgaikwad22/">LinkedIn</a> | Pune, India</p>
-          <p>Email: <a href="mailto:jaydeep.gaikwad@outlook.com">jaydeep.gaikwad@outlook.com</a> | Phone: 7972707428</p>
-        </td>
-      </tr>
-    </table>
+          <p><a href="https://www.linkedin.com/in/jaydeepgaikwad22/" style="color: #007BFF;">LinkedIn</a> | Pune, India</p>
+          <p>Email: <a href="mailto:jaydeep.gaikwad@outlook.com" style="color: #007BFF;">jaydeep.gaikwad@outlook.com</a> | Phone: 7972707428</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Profile</h3>
+        <p>Results-driven DevOps Engineer with experience in managing infrastructure, automating workflows (CI/CD), service delivery, and optimizing deployment processes. Adept at collaborating with development teams to streamline operations and improve system reliability. Proficient in tools such as Docker, Jenkins, Microsoft Azure, and Kubernetes.</p>
+      </div>
+
+      <div class="section skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>Docker, Kubernetes, Jenkins, Ansible, Terraform, Git, GitHub, Azure DevOps</li>
+          <li>Microsoft Azure, AWS (Basic Understanding)</li>
+          <li>Linux (Ubuntu, CentOS), Windows</li>
+          <li>Prometheus, Grafana, Python, Bash</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Professional Experience</h3>
+        <h4>Senior Systems Associate, Infosys Limited (Pune, MH) | 12/2021 - 04/2024</h4>
+        <ul>
+          <li>Implemented Docker containers for application development, testing, and deployment, leading to a more consistent environment.</li>
+          <li>Assisted in the data migration of on-premise application database to Microsoft Azure, ensuring seamless transition and minimal downtime using Azure Database Migration Service.</li>
+          <li>Managed provisioning of Azure infrastructure, including VMs, Blob Storage, Azure SQL Database, improving scalability and performance while minimizing time required.</li>
+          <li>Developed and maintained Ansible playbooks for configuration management and application deployment.</li>
+          <li>Monitored system performance and reliability using Prometheus and Grafana, reducing downtime by 30%.</li>
+          <li>Automated deployment processes using Jenkins, reducing deployment time by 50%.</li>
+          <li>Wrote and maintained scripts in Bash to automate routine tasks, increasing operational efficiency.</li>
+          <li>Managed service delivery for internet and toll-free numbers routing for a US-based telecommunications client.</li>
+          <li>Designed circuits for infrastructure to configure various routing details of internet circuits.</li>
+          <li>Participated in on-call rotations, troubleshooting and resolving infrastructure issues promptly.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Degree</th>
+            <th>College</th>
+          </tr>
+          <tr>
+            <td>2021-2023</td>
+            <td>Master of Science – Computer Applications</td>
+            <td>Modern College, Pune</td>
+          </tr>
+          <tr>
+            <td>2018-2021</td>
+            <td>Bachelor's in Computer Applications</td>
+            <td>Modern College, Pune</td>
+          </tr>
+          <tr>
+            <td>2016-2018</td>
+            <td>HSC 12th</td>
+            <td>RYK College of Science</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section certifications">
+        <h3>Certifications</h3>
+        <ul>
+          <li><a href="https://www.credly.com/badges/fdc2458e-3810-4c6b-9fe1-e3ee1b8af3bd">Certified Kubernetes Administrator (CKA) - Cloud Native Computing Foundation (CNCF)</a></li>
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-in/jaydeepgaikwad-8213/BD0712D88C8EB46?sharingId=7739C0899A18B076">AZ-104 Microsoft Certified Azure Administrator - Microsoft</a></li>
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-in/jaydeepgaikwad-8213/B1C4F7766EC6A7BA?sharingId=7739C0899A18B076">AZ-900 Microsoft Certified Azure Fundamentals - Microsoft</a></li>
+          <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/jaydeepgaikwad-8213/66A38B72483E675B?sharingId=7739C0899A18B076">DP-900 Microsoft Certified Azure Data Fundamentals - Microsoft</a></li>
+          <li><a href="https://learn.microsoft.com/en-us/users/jaydeepgaikwad-8213/credentials/60496a4c450814a5?">AI-900 Microsoft Certified: Azure AI Fundamentals - Microsoft</a></li>
+        </ul>
+      </div>
+    </div>
     
-    <hr />
-    
-    <h3>Profile</h3>
-    <p>Results-driven DevOps Engineer with experience in managing infrastructure, automating workflows (CI/CD), service delivery, and optimizing deployment processes. Adept at collaborating with development teams to streamline operations and improve system reliability. Proficient in tools such as Docker, Jenkins, Microsoft Azure, and Kubernetes.</p>
-    
-    <hr />
-    
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>Category</th>
-        <th>Skills</th>
-      </tr>
-      <tr>
-        <td>DevOps Tools</td>
-        <td>Docker, Kubernetes, Jenkins, Ansible, Terraform, Git, GitHub, Azure DevOps</td>
-      </tr>
-      <tr>
-        <td>Cloud Platforms</td>
-        <td>Microsoft Azure, AWS (Basic Understanding)</td>
-      </tr>
-      <tr>
-        <td>Operating Systems</td>
-        <td>Linux (Ubuntu, CentOS), Windows</td>
-      </tr>
-      <tr>
-        <td>Other</td>
-        <td>Prometheus, Grafana, Python, Bash</td>
-      </tr>
-    </table>
-    
-    <hr />
-    
-    <h3>Professional Experience</h3>
-    <h4>Senior Systems Associate, Infosys Limited (Pune, MH) | 12/2021 - 04/2024</h4>
-    <ul>
-      <li>Implemented Docker containers for application development, testing, and deployment, leading to a more consistent environment.</li>
-      <li>Assisted in the data migration of on-premise application database to Microsoft Azure, ensuring seamless transition and minimal downtime using Azure Database Migration Service.</li>
-      <li>Managed provisioning of Azure infrastructure, including VMs, Blob Storage, Azure SQL Database, improving scalability and performance while minimizing time required.</li>
-      <li>Developed and maintained Ansible playbooks for configuration management and application deployment.</li>
-      <li>Monitored system performance and reliability using Prometheus and Grafana, reducing downtime by 30%.</li>
-      <li>Automated deployment processes using Jenkins, reducing deployment time by 50%.</li>
-      <li>Wrote and maintained scripts in Bash to automate routine tasks, increasing operational efficiency.</li>
-      <li>Managed service delivery for internet and toll-free numbers routing for a US-based telecommunications client.</li>
-      <li>Designed circuits for infrastructure to configure various routing details of internet circuits.</li>
-      <li>Participated in on-call rotations, troubleshooting and resolving infrastructure issues promptly.</li>
-    </ul>
-    
-    <hr />
-    
-    <h3>Education</h3>
-    <table>
-      <tr>
-        <th>Year</th>
-        <th>Degree</th>
-        <th>College</th>
-      </tr>
-      <tr>
-        <td>2021-2023</td>
-        <td>Master of Science – Computer Applications</td>
-        <td>Modern College, Pune</td>
-      </tr>
-      <tr>
-        <td>2018-2021</td>
-        <td>Bachelor's in Computer Applications</td>
-        <td>Modern College, Pune</td>
-      </tr>
-      <tr>
-        <td>2016-2018</td>
-        <td>HSC 12th</td>
-        <td>RYK College of Science</td>
-      </tr>
-    </table>
-    
-    <hr />
-    
-    <h3>Certifications</h3>
-    <ul>
-      <li><a href="https://www.credly.com/badges/fdc2458e-3810-4c6b-9fe1-e3ee1b8af3bd">Certified Kubernetes Administrator (CKA) - Cloud Native Computing Foundation (CNCF)</a></li>
-      <li><a href="https://learn.microsoft.com/api/credentials/share/en-in/jaydeepgaikwad-8213/BD0712D88C8EB46?sharingId=7739C0899A18B076">AZ-104 Microsoft Certified Azure Administrator - Microsoft</a></li>
-      <li><a href="https://learn.microsoft.com/api/credentials/share/en-in/jaydeepgaikwad-8213/B1C4F7766EC6A7BA?sharingId=7739C0899A18B076">AZ-900 Microsoft Certified Azure Fundamentals - Microsoft</a></li>
-      <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/jaydeepgaikwad-8213/66A38B72483E675B?sharingId=7739C0899A18B076">DP-900 Microsoft Certified Azure Data Fundamentals - Microsoft</a></li>
-      <li><a href="https://learn.microsoft.com/en-us/users/jaydeepgaikwad-8213/credentials/60496a4c450814a5?">AI-900 Microsoft Certified: Azure AI Fundamentals - Microsoft</a></li>
-    </ul>
-    
-    <hr />
-    
-    <a href="Contact Details.html">Contact me</a>
+    <footer>
+      <a href="Contact Details.html" style="color: white;">Contact me</a>
+    </footer>
   </body>
 </html>
